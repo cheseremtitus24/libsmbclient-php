@@ -8,7 +8,7 @@ To-  #Doing Hard Things - #1 Rule: Always Include Tests For Any New Additions (f
 ----------------------------------------------------------------------------------------------------
 ```
 1. Upload Script to samba share (remote folder )- script should not load entire upload file to RAM (lest server runs out of RAM - upload files are large e.g 16GB in size)
-- Upload the file by breaking it up into block chunks
+- Upload the file by breaking it up into block chunks (hint: make use of streaming reads to write to filesystem from web server on server)
 	a. Offer Support for displaying progress bar on frontend.
 2. Download Script - feature support :
 	a. Server script should break down the download file into chunks while downloading so that it does not Exhaust RAM (downloading Large Files e.g. 32GB)
