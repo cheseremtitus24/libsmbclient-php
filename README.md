@@ -4,8 +4,8 @@ libsmbclient-php: a PHP wrapper for libsmbclient
 libsmbclient-php is a PHP extension that uses Samba's libsmbclient library
 to provide Samba related functions to PHP programs.
 
-To-  #Doing Hard Things 
-------------------------
+To-  #Doing Hard Things - #1 Rule: Always Include Tests For Any New Additions (features) & Bug Fixes
+----------------------------------------------------------------------------------------------------
 ```
 1. Upload Script to samba share (remote folder )- script should not load entire upload file to RAM (lest server runs out of RAM - upload files are large e.g 16GB in size)
 - Upload the file by breaking it up into block chunks
